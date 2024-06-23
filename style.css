@@ -1,0 +1,42 @@
+body {
+    background-color: #070b49;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    background-image: url('bokeh.jpg');
+    background-size: cover;
+    padding: 40px;
+    border-radius: 15px;
+
+.page {
+    max-width: 90px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.page h2{
+    color: #ccc;
+    font-size: 2em;
+    }
+
+}
+label {
+    flex: 1; 
+    margin-bottom: 5px;
+}
+
+input,select {
+    flex: 2; 
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="budget" class="page">
+        
+        <form id="budgetForm">
+            <div>
+                <h2>Dados</h2>
+                <label for="firstName">Nome:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div>
+                <label for="lastName">Apelido:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div>
+                <label for="phone">Telemóvel:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <h2>Pedidos de orçamento</h2>
+            <div class="form-container">
+                <div>
+                    <label for="web">Tipo de página de web:</label>
+                    <select name="web" id="web">
+                        <option value="loja">Loja virtual</option>
+                        <option value="landing">Landing page</option>
+                        <option value="portal">Portal</option>
+                        <option value="one-page">Site one-page</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="months">Prazo em meses:</label>
+                    <input type="text" id="months" name="months" required>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Marque os separadores desejados</h3>
+                <input type="checkbox" name="deseja" id="separator1"> Quem somos<br>
+                <input type="checkbox" name="deseja" id="separator2"> Galeria de fotografia<br>
+                <input type="checkbox" name="deseja" id="separator3"> Gestão interna<br>
+                <input type="checkbox" name="deseja" id="separator4"> Redes sociais<br>
+                <input type="checkbox" name="deseja" id="separator5"> Onde estamos<br>
+                <input type="checkbox" name="deseja" id="separator6"> eCommerce<br>
+                <input type="checkbox" name="deseja" id="separator7"> Noticias<br>
+            </div>
+
+            
+            
+            <div>
+                <h3>Orçamento Final</h3>
+                <p id="finalBudget">0 €</p>
+            </div>
+
+            <button type="button" id="calculateBtn">Calcular Orçamento</button>
+            <button type="button" id="submitBtn">Enviar</button>
+        </form>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
